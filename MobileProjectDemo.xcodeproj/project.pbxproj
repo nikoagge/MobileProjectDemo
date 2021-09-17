@@ -13,6 +13,7 @@
 		17AECC9C26F517FB0032D96C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AECC9A26F517FB0032D96C /* Main.storyboard */; };
 		17AECC9E26F517FC0032D96C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 17AECC9D26F517FC0032D96C /* Assets.xcassets */; };
 		17AECCA126F517FC0032D96C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AECC9F26F517FC0032D96C /* LaunchScreen.storyboard */; };
+		17AECCAF26F519A10032D96C /* TabBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 17AECCAE26F519A10032D96C /* TabBar.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		17AECC9D26F517FC0032D96C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		17AECCA026F517FC0032D96C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		17AECCA226F517FC0032D96C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		17AECCAE26F519A10032D96C /* TabBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TabBar.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,64 @@
 		17AECC9326F517FB0032D96C /* MobileProjectDemo */ = {
 			isa = PBXGroup;
 			children = (
-				17AECC9426F517FB0032D96C /* AppDelegate.swift */,
-				17AECC9626F517FB0032D96C /* SceneDelegate.swift */,
+				17AECCAB26F5192A0032D96C /* Pages */,
+				17AECCAA26F519220032D96C /* Enums */,
+				17AECCA926F519160032D96C /* Models */,
+				17AECCA826F518CF0032D96C /* Resources */,
 				17AECC9826F517FB0032D96C /* ViewController.swift */,
 				17AECC9A26F517FB0032D96C /* Main.storyboard */,
-				17AECC9D26F517FC0032D96C /* Assets.xcassets */,
-				17AECC9F26F517FC0032D96C /* LaunchScreen.storyboard */,
-				17AECCA226F517FC0032D96C /* Info.plist */,
 			);
 			path = MobileProjectDemo;
+			sourceTree = "<group>";
+		};
+		17AECCA826F518CF0032D96C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				17AECC9D26F517FC0032D96C /* Assets.xcassets */,
+				17AECC9426F517FB0032D96C /* AppDelegate.swift */,
+				17AECC9626F517FB0032D96C /* SceneDelegate.swift */,
+				17AECCA226F517FC0032D96C /* Info.plist */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		17AECCA926F519160032D96C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		17AECCAA26F519220032D96C /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		17AECCAB26F5192A0032D96C /* Pages */ = {
+			isa = PBXGroup;
+			children = (
+				17AECCAD26F5198F0032D96C /* Tab Bar */,
+				17AECCAC26F5193A0032D96C /* Launch Screen */,
+			);
+			path = Pages;
+			sourceTree = "<group>";
+		};
+		17AECCAC26F5193A0032D96C /* Launch Screen */ = {
+			isa = PBXGroup;
+			children = (
+				17AECC9F26F517FC0032D96C /* LaunchScreen.storyboard */,
+			);
+			path = "Launch Screen";
+			sourceTree = "<group>";
+		};
+		17AECCAD26F5198F0032D96C /* Tab Bar */ = {
+			isa = PBXGroup;
+			children = (
+				17AECCAE26F519A10032D96C /* TabBar.storyboard */,
+			);
+			path = "Tab Bar";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -124,6 +175,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				17AECCAF26F519A10032D96C /* TabBar.storyboard in Resources */,
 				17AECCA126F517FC0032D96C /* LaunchScreen.storyboard in Resources */,
 				17AECC9E26F517FC0032D96C /* Assets.xcassets in Resources */,
 				17AECC9C26F517FB0032D96C /* Main.storyboard in Resources */,
@@ -288,7 +340,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7X48R5E6LJ;
-				INFOPLIST_FILE = MobileProjectDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MobileProjectDemo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -307,7 +359,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7X48R5E6LJ;
-				INFOPLIST_FILE = MobileProjectDemo/Info.plist;
+				INFOPLIST_FILE = "$(SRCROOT)/MobileProjectDemo/Resources/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
