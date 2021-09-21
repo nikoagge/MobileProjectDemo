@@ -6,11 +6,11 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Tab Bar Controller-->
+        <!--Custom Tab Bar Controller-->
         <scene sceneID="0fR-4O-AqK">
             <objects>
-                <tabBarController id="eo6-r3-pEC" sceneMemberID="viewController">
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" backgroundImage="tabs_bg" id="BDR-QJ-fJa">
+                <tabBarController id="eo6-r3-pEC" customClass="CustomTabBarController" customModule="MobileProjectDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="BDR-QJ-fJa">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -78,7 +78,4 @@
             <point key="canvasLocation" x="-896" y="228"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="tabs_bg" width="375" height="100"/>
-    </resources>
 </document>

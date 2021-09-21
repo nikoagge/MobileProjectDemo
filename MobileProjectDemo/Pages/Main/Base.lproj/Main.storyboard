@@ -18,7 +18,9 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="btn_play" id="79L-wG-XKT"/>
                     <navigationItem key="navigationItem" title="Main" id="9rs-yT-h8y"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,6 +46,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="btn_play" width="76" height="76"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

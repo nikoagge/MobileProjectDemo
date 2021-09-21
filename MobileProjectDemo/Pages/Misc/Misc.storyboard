@@ -18,7 +18,9 @@
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="ic_misc" id="NuR-1w-cYn"/>
                     <navigationItem key="navigationItem" title="Misc" id="oOu-nR-SLN"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -44,6 +46,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="ic_misc" width="28" height="28"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
