@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="o4U-UR-zTS">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Σύνδεση-->
+        <scene sceneID="s0d-6b-0kx">
+            <objects>
+                <viewController id="Y6W-OH-hqX" customClass="LoginViewController" customModule="MobileProjectDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0xj-Ew-TXA">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg_gradient" translatesAutoresizingMaskIntoConstraints="NO" id="41D-21-rB7">
+                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="UserID" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7EL-tq-cph">
+                                <rect key="frame" x="41" y="159" width="55" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DQc-uh-BYR">
+                                <rect key="frame" x="106" y="159.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="20" id="LLC-h1-Q2T"/>
+                                    <constraint firstAttribute="height" constant="20" id="cm9-l4-rvN"/>
+                                </constraints>
+                                <state key="normal" image="ic_info"/>
+                                <connections>
+                                    <action selector="userIDInfoButtonTouchUpInside:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="RIf-UV-coP"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="k8Y-OM-KhQ" customClass="MaterialTextfieldView" customModule="MobileProjectDemo" customModuleProvider="target">
+                                <rect key="frame" x="41" y="190" width="332" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="jay-hv-aM7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Κωδικός" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="azM-JE-ngL">
+                                <rect key="frame" x="41" y="260" width="68.5" height="21"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BeJ-2s-Npu">
+                                <rect key="frame" x="119.5" y="260.5" width="20" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Wxo-xb-v3y"/>
+                                    <constraint firstAttribute="width" constant="20" id="tZ6-VN-Iot"/>
+                                </constraints>
+                                <state key="normal" image="ic_info"/>
+                                <connections>
+                                    <action selector="passwordInfoButtonTouchUpInside:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="FUU-lh-wxm"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sSm-RV-bd2" customClass="MaterialTextfieldView" customModule="MobileProjectDemo" customModuleProvider="target">
+                                <rect key="frame" x="41" y="291" width="332" height="40"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="0Xg-gO-jb8"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isSecureTextEntry" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hm-PP-vjJ">
+                                <rect key="frame" x="317" y="260.5" width="56" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="cLl-KO-1gb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
+                                <state key="normal" title="Προβολή">
+                                    <color key="titleColor" red="0.17254901960784313" green="0.62352941176470589" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="showPasswordButtonTouchUpInside:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="oIV-UC-qAs"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jdu-uN-p18" customClass="CommonButton" customModule="MobileProjectDemo" customModuleProvider="target">
+                                <rect key="frame" x="94" y="799" width="226" height="50"/>
+                                <color key="backgroundColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.11372549019607843" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Σύνδεση">
+                                    <color key="titleColor" red="0.52156862745098043" green="0.76470588235294112" blue="0.4392156862745098" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="isWhite" value="NO"/>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="loginCommonButtonTouchUpInside:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="qfI-pl-vMe"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="F47-Na-rYE">
+                                <rect key="frame" x="195" y="427" width="184" height="58"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="greece-flag-round-icon" translatesAutoresizingMaskIntoConstraints="NO" id="Fav-xr-5Eh">
+                                        <rect key="frame" x="13" y="13" width="32" height="32"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="32" id="nIf-n9-WzA"/>
+                                            <constraint firstAttribute="height" constant="32" id="sgE-dE-yhS"/>
+                                        </constraints>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UTd-WU-CPa">
+                                        <rect key="frame" x="129.5" y="18" width="15" height="22"/>
+                                        <state key="normal" image="arrow_down"/>
+                                        <connections>
+                                            <action selector="showMoreLanguagesButtonTouchUpInside:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="arq-Ca-Q51"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Greek" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="z2f-Yl-N8q">
+                                        <rect key="frame" x="58" y="20.5" width="40.5" height="17.5"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="z2f-Yl-N8q" firstAttribute="centerY" secondItem="Fav-xr-5Eh" secondAttribute="centerY" id="2fO-Zd-pFG"/>
+                                    <constraint firstItem="Fav-xr-5Eh" firstAttribute="centerY" secondItem="F47-Na-rYE" secondAttribute="centerY" id="8GH-OQ-Nd1"/>
+                                    <constraint firstAttribute="height" constant="58" id="D3m-Zd-eJh"/>
+                                    <constraint firstItem="z2f-Yl-N8q" firstAttribute="leading" secondItem="Fav-xr-5Eh" secondAttribute="trailing" constant="13" id="EdS-Xx-vpu"/>
+                                    <constraint firstItem="Fav-xr-5Eh" firstAttribute="leading" secondItem="F47-Na-rYE" secondAttribute="leading" constant="13" id="QW6-X5-jYS"/>
+                                    <constraint firstAttribute="width" constant="184" id="TW1-Uh-wlN"/>
+                                    <constraint firstItem="UTd-WU-CPa" firstAttribute="leading" secondItem="z2f-Yl-N8q" secondAttribute="trailing" constant="31" id="U21-4Z-6ku"/>
+                                    <constraint firstItem="UTd-WU-CPa" firstAttribute="centerY" secondItem="z2f-Yl-N8q" secondAttribute="centerY" id="fIg-K9-DAG"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="UTd-WU-CPa" secondAttribute="trailing" constant="13" id="mIb-3g-ybV"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="TTx-gN-cxl">
+                                <rect key="frame" x="195" y="491" width="184" height="116"/>
+                                <subviews>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CIn-Kl-hAe">
+                                        <rect key="frame" x="0.0" y="0.0" width="184" height="58"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="y1b-zz-78R">
+                                                <rect key="frame" x="20" y="13" width="32" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="32" id="GeF-c7-wEj"/>
+                                                    <constraint firstAttribute="height" constant="32" id="aLl-20-kRo"/>
+                                                </constraints>
+                                                <state key="normal" image="united-states-of-america-flag-round"/>
+                                                <connections>
+                                                    <action selector="englishLanguageTouchUpInside:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="0gd-Fu-0uM"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TUi-CK-IjN">
+                                                <rect key="frame" x="65" y="14" width="49" height="30"/>
+                                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="15"/>
+                                                <state key="normal" title="English">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="englishLanguageTouchUpInside:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="x5h-Z2-9jN"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="y1b-zz-78R" firstAttribute="centerY" secondItem="CIn-Kl-hAe" secondAttribute="centerY" id="FvA-gb-eK9"/>
+                                            <constraint firstItem="TUi-CK-IjN" firstAttribute="centerY" secondItem="y1b-zz-78R" secondAttribute="centerY" id="LSE-fE-LM0"/>
+                                            <constraint firstAttribute="height" constant="58" id="W0r-Nr-HvJ"/>
+                                            <constraint firstItem="TUi-CK-IjN" firstAttribute="leading" secondItem="y1b-zz-78R" secondAttribute="trailing" constant="13" id="fJR-hB-5fT"/>
+                                            <constraint firstItem="y1b-zz-78R" firstAttribute="leading" secondItem="CIn-Kl-hAe" secondAttribute="leading" constant="20" symbolic="YES" id="fOV-z1-HpL"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="TUi-CK-IjN" secondAttribute="trailing" constant="13" id="vMk-q0-4dF"/>
+                                        </constraints>
+                                    </view>
+                                    <view clipsSubviews="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4pp-0A-Jrx">
+                                        <rect key="frame" x="0.0" y="58" width="184" height="58"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xgZ-vs-3Xn">
+                                                <rect key="frame" x="20" y="13" width="32" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="32" id="UuW-80-UbX"/>
+                                                    <constraint firstAttribute="height" constant="32" id="phg-QC-89S"/>
+                                                </constraints>
+                                                <state key="normal" image="greece-flag-round-icon"/>
+                                                <connections>
+                                                    <action selector="greekLanguageTouchUpInside:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="cpC-Pl-DEe"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BNz-dh-UjE">
+                                                <rect key="frame" x="65" y="14" width="41" height="30"/>
+                                                <state key="normal" title="Greek"/>
+                                                <connections>
+                                                    <action selector="greekLanguageTouchUpInside:" destination="Y6W-OH-hqX" eventType="touchUpInside" id="MRF-Yo-E4b"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <color key="backgroundColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="xgZ-vs-3Xn" firstAttribute="leading" secondItem="4pp-0A-Jrx" secondAttribute="leading" constant="20" symbolic="YES" id="29q-ju-OWU"/>
+                                            <constraint firstItem="BNz-dh-UjE" firstAttribute="centerY" secondItem="xgZ-vs-3Xn" secondAttribute="centerY" id="B8J-4D-ELw"/>
+                                            <constraint firstItem="BNz-dh-UjE" firstAttribute="leading" secondItem="xgZ-vs-3Xn" secondAttribute="trailing" constant="13" id="CUS-nc-XrR"/>
+                                            <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="BNz-dh-UjE" secondAttribute="trailing" constant="13" id="Qcv-NW-nSF"/>
+                                            <constraint firstAttribute="height" constant="58" id="U9P-oB-gA2"/>
+                                            <constraint firstItem="xgZ-vs-3Xn" firstAttribute="centerY" secondItem="4pp-0A-Jrx" secondAttribute="centerY" id="nXQ-gn-Lh1"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="116" id="wxT-Yv-FML"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HY2-Hh-R1k">
+                                <rect key="frame" x="38" y="339" width="338" height="75"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="τουλάχιστον 8 χαρακτήρες (2 κεφαλαία, 3 πεζά, 1 ειδικός χαρακτήρας, 2 νούμερα)" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tqc-s2-P0F">
+                                        <rect key="frame" x="12" y="16" width="314" height="43"/>
+                                        <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="15"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.10588235294117647" green="0.10588235294117647" blue="0.11372549019607843" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="75" id="IgP-nl-ePg"/>
+                                    <constraint firstAttribute="bottom" secondItem="tqc-s2-P0F" secondAttribute="bottom" constant="16" id="Nj7-i1-U6K"/>
+                                    <constraint firstItem="tqc-s2-P0F" firstAttribute="leading" secondItem="HY2-Hh-R1k" secondAttribute="leading" constant="12" id="RX6-Im-ahj"/>
+                                    <constraint firstAttribute="trailing" secondItem="tqc-s2-P0F" secondAttribute="trailing" constant="12" id="m3p-zy-4LO"/>
+                                    <constraint firstItem="tqc-s2-P0F" firstAttribute="top" secondItem="HY2-Hh-R1k" secondAttribute="top" constant="16" id="vFz-Xs-ae4"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="VLL-PO-Yea"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="41D-21-rB7" firstAttribute="top" secondItem="VLL-PO-Yea" secondAttribute="top" id="10c-Bb-KLf"/>
+                            <constraint firstItem="VLL-PO-Yea" firstAttribute="trailing" secondItem="k8Y-OM-KhQ" secondAttribute="trailing" constant="41" id="7xH-co-ROC"/>
+                            <constraint firstAttribute="bottom" secondItem="41D-21-rB7" secondAttribute="bottom" id="9Qh-Ud-zId"/>
+                            <constraint firstItem="BeJ-2s-Npu" firstAttribute="centerY" secondItem="azM-JE-ngL" secondAttribute="centerY" id="9VQ-dl-0ra"/>
+                            <constraint firstItem="6hm-PP-vjJ" firstAttribute="trailing" secondItem="sSm-RV-bd2" secondAttribute="trailing" id="AKp-4Q-XKM"/>
+                            <constraint firstItem="DQc-uh-BYR" firstAttribute="centerY" secondItem="7EL-tq-cph" secondAttribute="centerY" id="Iiy-FO-xEx"/>
+                            <constraint firstItem="DQc-uh-BYR" firstAttribute="leading" secondItem="7EL-tq-cph" secondAttribute="trailing" constant="10" id="J7d-o9-Vl4"/>
+                            <constraint firstItem="F47-Na-rYE" firstAttribute="top" secondItem="HY2-Hh-R1k" secondAttribute="bottom" constant="13" id="JSR-pf-fNR"/>
+                            <constraint firstItem="HY2-Hh-R1k" firstAttribute="leading" secondItem="VLL-PO-Yea" secondAttribute="leading" constant="38" id="Lbg-VG-hEO"/>
+                            <constraint firstItem="VLL-PO-Yea" firstAttribute="trailing" secondItem="jdu-uN-p18" secondAttribute="trailing" constant="94" id="MI8-16-T5d"/>
+                            <constraint firstItem="azM-JE-ngL" firstAttribute="leading" secondItem="k8Y-OM-KhQ" secondAttribute="leading" id="MOA-07-Tk1"/>
+                            <constraint firstItem="k8Y-OM-KhQ" firstAttribute="top" secondItem="7EL-tq-cph" secondAttribute="bottom" constant="10" id="PC9-Up-Y4w"/>
+                            <constraint firstItem="TTx-gN-cxl" firstAttribute="width" secondItem="F47-Na-rYE" secondAttribute="width" id="Q1J-kj-s0B"/>
+                            <constraint firstItem="sSm-RV-bd2" firstAttribute="leading" secondItem="azM-JE-ngL" secondAttribute="leading" id="QKb-g8-a6g"/>
+                            <constraint firstItem="VLL-PO-Yea" firstAttribute="trailing" secondItem="HY2-Hh-R1k" secondAttribute="trailing" constant="38" id="S6X-jR-Uow"/>
+                            <constraint firstItem="VLL-PO-Yea" firstAttribute="trailing" secondItem="41D-21-rB7" secondAttribute="trailing" id="URY-Bl-FA3"/>
+                            <constraint firstItem="41D-21-rB7" firstAttribute="bottom" secondItem="jdu-uN-p18" secondAttribute="bottom" constant="47" id="W51-Kt-kmN"/>
+                            <constraint firstItem="41D-21-rB7" firstAttribute="leading" secondItem="VLL-PO-Yea" secondAttribute="leading" id="X1a-bu-SqC"/>
+                            <constraint firstItem="azM-JE-ngL" firstAttribute="top" secondItem="k8Y-OM-KhQ" secondAttribute="bottom" constant="30" id="ar8-ET-Dwk"/>
+                            <constraint firstItem="HY2-Hh-R1k" firstAttribute="top" secondItem="sSm-RV-bd2" secondAttribute="bottom" constant="8" id="bFD-7c-QjI"/>
+                            <constraint firstItem="7EL-tq-cph" firstAttribute="top" secondItem="41D-21-rB7" secondAttribute="top" constant="71" id="dEC-Ex-9qp"/>
+                            <constraint firstItem="jdu-uN-p18" firstAttribute="leading" secondItem="VLL-PO-Yea" secondAttribute="leading" constant="94" id="dYc-wD-l5p"/>
+                            <constraint firstItem="6hm-PP-vjJ" firstAttribute="centerY" secondItem="azM-JE-ngL" secondAttribute="centerY" id="ePP-d9-NQe"/>
+                            <constraint firstItem="sSm-RV-bd2" firstAttribute="top" secondItem="azM-JE-ngL" secondAttribute="bottom" constant="10" id="emD-0r-iIP"/>
+                            <constraint firstItem="F47-Na-rYE" firstAttribute="centerX" secondItem="jdu-uN-p18" secondAttribute="centerX" constant="80" id="fnW-sv-gsk"/>
+                            <constraint firstItem="TTx-gN-cxl" firstAttribute="leading" secondItem="F47-Na-rYE" secondAttribute="leading" id="fu8-su-LMS"/>
+                            <constraint firstItem="VLL-PO-Yea" firstAttribute="trailing" secondItem="sSm-RV-bd2" secondAttribute="trailing" constant="41" id="j4Q-b6-gFI"/>
+                            <constraint firstItem="BeJ-2s-Npu" firstAttribute="leading" secondItem="azM-JE-ngL" secondAttribute="trailing" constant="10" id="mIV-c3-Mj7"/>
+                            <constraint firstItem="k8Y-OM-KhQ" firstAttribute="leading" secondItem="7EL-tq-cph" secondAttribute="leading" id="oFI-rg-0dr"/>
+                            <constraint firstItem="TTx-gN-cxl" firstAttribute="top" secondItem="F47-Na-rYE" secondAttribute="bottom" constant="6" id="vPq-Ce-bKf"/>
+                            <constraint firstItem="7EL-tq-cph" firstAttribute="leading" secondItem="VLL-PO-Yea" secondAttribute="leading" constant="41" id="zRg-MI-KLZ"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Σύνδεση" id="ilh-6e-2uQ"/>
+                    <connections>
+                        <outlet property="currentLanguageContentView" destination="F47-Na-rYE" id="EsN-lG-Wg8"/>
+                        <outlet property="currentLanguageDescriptionButton" destination="z2f-Yl-N8q" id="f6U-GC-XPE"/>
+                        <outlet property="currentLanguageImageView" destination="Fav-xr-5Eh" id="hKb-8j-9nP"/>
+                        <outlet property="englishLanguageContentView" destination="CIn-Kl-hAe" id="YbP-2y-aM2"/>
+                        <outlet property="englishLanguageDescriptionButton" destination="TUi-CK-IjN" id="OIG-fC-HGX"/>
+                        <outlet property="englishLanguageImageButton" destination="y1b-zz-78R" id="qr8-ZS-KPR"/>
+                        <outlet property="greekLanguageContentView" destination="4pp-0A-Jrx" id="xUy-Vc-CeS"/>
+                        <outlet property="greekLanguageDescriptionButton" destination="BNz-dh-UjE" id="BkY-4G-0Br"/>
+                        <outlet property="greekLanguageImageButton" destination="xgZ-vs-3Xn" id="rdl-Yn-BKb"/>
+                        <outlet property="infoDescriptionLabel" destination="tqc-s2-P0F" id="znj-T5-xyH"/>
+                        <outlet property="infoDescriptionLabelContentView" destination="HY2-Hh-R1k" id="aKb-wK-Tdm"/>
+                        <outlet property="languagesStackView" destination="TTx-gN-cxl" id="XV2-12-1pk"/>
+                        <outlet property="loginCommonButton" destination="jdu-uN-p18" id="Ynz-bc-YJ6"/>
+                        <outlet property="passwordDescriptionLabel" destination="azM-JE-ngL" id="Go9-w6-0Rr"/>
+                        <outlet property="passwordInfoButton" destination="BeJ-2s-Npu" id="Jjf-br-BAI"/>
+                        <outlet property="passwordMaterialTextfieldView" destination="sSm-RV-bd2" id="5NE-bJ-q6k"/>
+                        <outlet property="showMoreLanguagesButton" destination="UTd-WU-CPa" id="HH6-Gx-ngK"/>
+                        <outlet property="showPasswordButton" destination="6hm-PP-vjJ" id="ilF-Ba-7Zq"/>
+                        <outlet property="userIDDescriptionLabel" destination="7EL-tq-cph" id="Qb6-U2-C5l"/>
+                        <outlet property="userIDInfoButton" destination="DQc-uh-BYR" id="tN4-Qj-eKH"/>
+                        <outlet property="userIDMaterialTextfieldView" destination="k8Y-OM-KhQ" id="Q8O-HJ-NSy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="910.14492753623199" y="93.75"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="zQV-B2-e4c">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="o4U-UR-zTS" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" barStyle="black" id="V9s-Fs-Ewj">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="Y6W-OH-hqX" kind="relationship" relationship="rootViewController" id="N7C-t7-KEq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zh2-O6-WBg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="0.0" y="93.75"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="jdu-uN-p18">
+            <size key="intrinsicContentSize" width="65" height="32"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="arrow_down" width="15" height="9"/>
+        <image name="bg_gradient" width="375" height="667"/>
+        <image name="greece-flag-round-icon" width="32" height="32"/>
+        <image name="ic_info" width="20" height="20"/>
+        <image name="united-states-of-america-flag-round" width="32" height="32"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
