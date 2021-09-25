@@ -35,6 +35,9 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let pr = NetworkClient.shared.login(userName: "TH1234", password: "3NItas1!")
+        debugPrint(pr)
+        
         setupUI()
     }
     
@@ -60,6 +63,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginCommonButtonTouchUpInside(_ sender: CommonButton) {
+        
     }
 }
 

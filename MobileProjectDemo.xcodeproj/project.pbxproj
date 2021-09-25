@@ -23,6 +23,8 @@
 		1761C19B26F7A01700D4EC1B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1761C19A26F7A01700D4EC1B /* Constants.swift */; };
 		1761C19D26F7A1EE00D4EC1B /* CustomTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1761C19C26F7A1EE00D4EC1B /* CustomTabBarController.swift */; };
 		1761C19F26F7A57F00D4EC1B /* TabNavigationMenu.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1761C19E26F7A57F00D4EC1B /* TabNavigationMenu.swift */; };
+		176251E226FE1CB5003C052B /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176251E126FE1CB5003C052B /* NetworkClient.swift */; };
+		176251E426FE26AC003C052B /* LoginResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176251E326FE26AC003C052B /* LoginResponse.swift */; };
 		176286C026F7277F00DE9AA2 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176286BF26F7277F00DE9AA2 /* TabBarItem.swift */; };
 		176286C226F728BF00DE9AA2 /* StoryboardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176286C126F728BF00DE9AA2 /* StoryboardType.swift */; };
 		176286C426F729C700DE9AA2 /* MainTabType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 176286C326F729C700DE9AA2 /* MainTabType.swift */; };
@@ -57,6 +59,8 @@
 		1761C19A26F7A01700D4EC1B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		1761C19C26F7A1EE00D4EC1B /* CustomTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarController.swift; sourceTree = "<group>"; };
 		1761C19E26F7A57F00D4EC1B /* TabNavigationMenu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabNavigationMenu.swift; sourceTree = "<group>"; };
+		176251E126FE1CB5003C052B /* NetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		176251E326FE26AC003C052B /* LoginResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginResponse.swift; sourceTree = "<group>"; };
 		176286BF26F7277F00DE9AA2 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		176286C126F728BF00DE9AA2 /* StoryboardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardType.swift; sourceTree = "<group>"; };
 		176286C326F729C700DE9AA2 /* MainTabType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabType.swift; sourceTree = "<group>"; };
@@ -100,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				1761C19726F787B300D4EC1B /* Coordinator.swift */,
+				176251E126FE1CB5003C052B /* NetworkClient.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -168,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				1761C19526F7872900D4EC1B /* NavigationItem.swift */,
+				176251E326FE26AC003C052B /* LoginResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -352,6 +358,7 @@
 				1761C19826F787B300D4EC1B /* Coordinator.swift in Sources */,
 				175D9F5F26F5CF9F003EA468 /* MiscViewController.swift in Sources */,
 				175D9F6526F5CFD0003EA468 /* PersonViewController.swift in Sources */,
+				176251E426FE26AC003C052B /* LoginResponse.swift in Sources */,
 				178729A926F9490200ABB3F2 /* UIViewExtension.swift in Sources */,
 				176286C026F7277F00DE9AA2 /* TabBarItem.swift in Sources */,
 				17661C3426FA4EE2004F8EAC /* NoBordersTextField.swift in Sources */,
@@ -359,6 +366,7 @@
 				176286C426F729C700DE9AA2 /* MainTabType.swift in Sources */,
 				176286C626F72B5900DE9AA2 /* PageType.swift in Sources */,
 				1761C19626F7872900D4EC1B /* NavigationItem.swift in Sources */,
+				176251E226FE1CB5003C052B /* NetworkClient.swift in Sources */,
 				175D9F6926F5CFE4003EA468 /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
