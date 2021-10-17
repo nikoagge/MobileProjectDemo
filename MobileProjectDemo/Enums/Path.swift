@@ -9,4 +9,5 @@ import Foundation
 
 enum Path: String {
     case login = "https://3nt-demo-backend.azurewebsites.net/Access/Login"
+    case books = "https://3nt-demo-backend.azurewebsites.net/Access/Books"
 }

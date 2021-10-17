@@ -35,6 +35,7 @@
 		17707D6B271AD33B009D8280 /* Path.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17707D6A271AD33B009D8280 /* Path.swift */; };
 		17707D6D271B5014009D8280 /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17707D6C271B5014009D8280 /* StringExtension.swift */; };
 		17707D6F271C1590009D8280 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17707D6E271C1590009D8280 /* UIViewControllerExtension.swift */; };
+		17707D71271C3F42009D8280 /* BooksResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17707D70271C3F42009D8280 /* BooksResponse.swift */; };
 		178729A926F9490200ABB3F2 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 178729A826F9490200ABB3F2 /* UIViewExtension.swift */; };
 		17AECC9526F517FB0032D96C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AECC9426F517FB0032D96C /* AppDelegate.swift */; };
 		17AECC9726F517FB0032D96C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 17AECC9626F517FB0032D96C /* SceneDelegate.swift */; };
@@ -75,6 +76,7 @@
 		17707D6A271AD33B009D8280 /* Path.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Path.swift; sourceTree = "<group>"; };
 		17707D6C271B5014009D8280 /* StringExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
 		17707D6E271C1590009D8280 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		17707D70271C3F42009D8280 /* BooksResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BooksResponse.swift; sourceTree = "<group>"; };
 		178729A826F9490200ABB3F2 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		17AECC9126F517FB0032D96C /* MobileProjectDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileProjectDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		17AECC9426F517FB0032D96C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -185,6 +187,7 @@
 			children = (
 				1761C19526F7872900D4EC1B /* NavigationItem.swift */,
 				176251E326FE26AC003C052B /* LoginResponse.swift */,
+				17707D70271C3F42009D8280 /* BooksResponse.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -359,6 +362,7 @@
 				176286C226F728BF00DE9AA2 /* StoryboardType.swift in Sources */,
 				1761C19F26F7A57F00D4EC1B /* TabNavigationMenu.swift in Sources */,
 				1761C19426F7866D00D4EC1B /* NavigationStyle.swift in Sources */,
+				17707D71271C3F42009D8280 /* BooksResponse.swift in Sources */,
 				1761C19D26F7A1EE00D4EC1B /* CustomTabBarController.swift in Sources */,
 				17AECCB826F51C690032D96C /* BookshelfViewController.swift in Sources */,
 				17707D6D271B5014009D8280 /* StringExtension.swift in Sources */,
