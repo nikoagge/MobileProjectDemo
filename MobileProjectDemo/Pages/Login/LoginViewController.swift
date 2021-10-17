@@ -8,6 +8,8 @@
 import UIKit
 
 class LoginViewController: UIViewController {
+    @IBOutlet weak var loginViewControllerScrollView: UIScrollView!
+    @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var userIDDescriptionLabel: UILabel!
     @IBOutlet weak var userIDInfoButton: UIButton!
     @IBOutlet weak var userIDMaterialTextfieldView: MaterialTextfieldView!
@@ -37,8 +39,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let someVar = NetworkClient.shared.login(username: "TH134", password: "3NItas1!")
-        debugPrint(someVar)
+        let someVar = NetworkClient.shared.login(username: "THfGGJ134", password: "3NItas1!")
+        debugPrint("TH14afcsfFAFfasfa!".isValid())
         setupUI()
     }
     
