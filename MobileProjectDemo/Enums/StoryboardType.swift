@@ -13,6 +13,7 @@ enum StoryboardType: String {
     case main = "Main"
     case person = "Person"
     case settings = "Settings"
+    case tabBar = "TabBar"
     
     func getStoryboard() -> UIStoryboard {
         return UIStoryboard(name: rawValue, bundle: nil)

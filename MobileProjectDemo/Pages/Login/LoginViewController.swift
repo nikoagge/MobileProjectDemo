@@ -7,9 +7,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
-    @IBOutlet weak var loginViewControllerScrollView: UIScrollView!
-    @IBOutlet weak var backgroundImageView: UIImageView!
+class LoginViewController: UIViewController, Coordinator {
     @IBOutlet weak var userIDDescriptionLabel: UILabel!
     @IBOutlet weak var userIDInfoButton: UIButton!
     @IBOutlet weak var userIDMaterialTextfieldView: MaterialTextfieldView!
@@ -39,8 +37,8 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let someVar = NetworkClient.shared.login(username: "THfGGJ134", password: "3NItas1!")
-        debugPrint("TH14afcsfFAFfasfa!".isValid())
+        userIDMaterialTextfieldView.noBordersTextfield.text = "TH1234"
+        passwordMaterialTextfieldView.noBordersTextfield.text = "3NItas1!"
         setupUI()
     }
     
@@ -89,7 +87,38 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginCommonButtonTouchUpInside(_ sender: CommonButton) {
+        if let username = userIDMaterialTextfieldView.noBordersTextfield.text, let password = passwordMaterialTextfieldView.noBordersTextfield.text {
+            guard !username.isEmpty, !password.isEmpty, password.isValid() else {
+                presentAlertController(title: "Wrong Credentials", message: "Check again your credentials")
+                return
+            }
+            let loginResponse = NetworkClient.shared.login(username: userIDMaterialTextfieldView.noBordersTextfield.text!, password: passwordMaterialTextfieldView.noBordersTextfield.text!)
+            
+            if loginResponse != nil {
+                navigate(.init(page: .customTabBarController, navigationStyle: .push(animated: true)))
+                userIDMaterialTextfieldView.noBordersTextfield.text = ""
+                passwordMaterialTextfieldView.noBordersTextfield.text = ""
+            } else {
+                presentAlertController(title: "Error", message: "Something wrong happened with the network request.")
+            }
+        }
+    }
+}
+
+extension LoginViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        switch textField {
+        case userIDMaterialTextfieldView.noBordersTextfield:
+            passwordMaterialTextfieldView.noBordersTextfield.becomeFirstResponder()
+                        
+        case passwordMaterialTextfieldView.noBordersTextfield:
+            passwordMaterialTextfieldView.noBordersTextfield.resignFirstResponder()
+            
+        default:
+            textField.resignFirstResponder()
+        }
         
+        return true
     }
 }
 
@@ -102,6 +131,7 @@ private extension LoginViewController {
         greekLanguageContentView.fround(radius: 12)
         toggleAppearance(isHidden: languagesStackViewIsHidden, view: languagesStackView)
         toggleAppearance(isHidden: infoDescriptionLabelContentViewIsHidden, view: infoDescriptionLabelContentView)
+        textFieldsConfiguration()
         
         navigationController?.navigationBar.backgroundColor = UIColor(red: 0.11, green: 0.11, blue: 0.11, alpha: 1)
     }
@@ -138,5 +168,11 @@ private extension LoginViewController {
             loginCommonButton.setTitle("Login", for: .normal)
             currentLanguageImageView.image = #imageLiteral(resourceName: "united-states-of-america-flag-round")
         }
+    }
+    
+    func textFieldsConfiguration() {
+        userIDMaterialTextfieldView.noBordersTextfield.becomeFirstResponder()
+        userIDMaterialTextfieldView.noBordersTextfield.delegate = self
+        passwordMaterialTextfieldView.noBordersTextfield.delegate = self
     }
 }

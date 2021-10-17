@@ -16,4 +16,5 @@ enum PageType {
     case mainViewController
     case personViewController
     case settingsViewController
+    case customTabBarController
 }

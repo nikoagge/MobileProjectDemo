@@ -23,10 +23,6 @@ extension Coordinator {
         case .viewController(let viewController):
             controllerToNavigate = viewController
             
-//        case .mainTabType(let mainTabType):
-//            controllerToNavigate = CustomTabBarController()
-//            (controllerToNavigate as? CustomTabBarController)?.setSelectedIndex(newSelectedIndex: mainTabType.rawValue)
-            
         case .bookshelfViewController:
             controllerToNavigate = StoryboardType.bookshelf.getController(BookshelfViewController.self)
             
@@ -41,6 +37,9 @@ extension Coordinator {
             
         case .settingsViewController:
             controllerToNavigate = StoryboardType.settings.getController(SettingsViewController.self)
+            
+        case .customTabBarController:
+            controllerToNavigate = StoryboardType.tabBar.getController(CustomTabBarController.self)
         }
         
         DispatchQueue.main.async {
