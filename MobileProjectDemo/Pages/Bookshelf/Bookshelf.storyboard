@@ -13,14 +13,41 @@
             <objects>
                 <viewController storyboardIdentifier="BookshelfViewController" id="Y6W-OH-hqX" customClass="BookshelfViewController" customModule="MobileProjectDemo" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="5EZ-qb-Rvc">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="Iyf-tL-Vnz">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="5" id="9Y2-51-NLF">
+                                    <size key="itemSize" width="200" height="200"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="2" minY="10" maxX="2" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <connections>
+                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="P3E-xH-SoF"/>
+                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="d1i-dx-Nvl"/>
+                                </connections>
+                            </collectionView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Iyf-tL-Vnz" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Ejt-Y6-Sis"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Iyf-tL-Vnz" secondAttribute="bottom" id="KiC-3g-mPh"/>
+                            <constraint firstItem="Iyf-tL-Vnz" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Xf8-Yt-Czw"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Iyf-tL-Vnz" secondAttribute="trailing" id="oOG-AN-BIG"/>
+                        </constraints>
                     </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
                     <tabBarItem key="tabBarItem" title="" image="ic_book_sel" id="s8s-CV-aHH"/>
                     <navigationItem key="navigationItem" title="Περιοδικά" id="IfO-nc-7ZB"/>
                     <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="bookShelfCollectionView" destination="Iyf-tL-Vnz" id="7Dy-WW-19u"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

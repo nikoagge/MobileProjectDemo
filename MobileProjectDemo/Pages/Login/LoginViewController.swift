@@ -95,6 +95,10 @@ class LoginViewController: UIViewController, Coordinator {
             let loginResponse = NetworkClient.shared.login(username: userIDMaterialTextfieldView.noBordersTextfield.text!, password: passwordMaterialTextfieldView.noBordersTextfield.text!)
             
             if loginResponse != nil {
+                UserDefaults.standard.setValue(loginResponse?.accessToken, forKey: "accessToken")
+//                let accessTokenDictionary: [String: String?] = ["accessToken": loginResponse?.accessToken]
+//
+//                NotificationCenter.default.post(name: .sendAccessToken, object: nil, userInfo: accessTokenDictionary)
                 navigate(.init(page: .customTabBarController, navigationStyle: .push(animated: true)))
                 userIDMaterialTextfieldView.noBordersTextfield.text = ""
                 passwordMaterialTextfieldView.noBordersTextfield.text = ""
